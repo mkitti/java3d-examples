@@ -36,7 +36,7 @@
 			<url>https://java.net/projects/j3d-examples</url>
 			<organization>Java.net</organization>
 			<organizationUrl>https://java.net</organizationUrl>
-		</contributor>		
+		</contributor>
 	</contributors>
 	
 	<scm>
@@ -59,12 +59,39 @@
 			<groupId>${project.groupId}</groupId>
 			<artifactId>java3d-core</artifactId>
 			<version>${project.version}</version>
-		</dependency>		
+			<scope>system</scope>
+			<systemPath>${project.basedir}/java3d1.7/j3dcore.jar</systemPath>
+		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>java3d-utils</artifactId>
 			<version>${project.version}</version>
-		</dependency>		
+			<scope>system</scope>
+			<systemPath>${project.basedir}/java3d1.7/j3dutils.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>java3d-vecmath</artifactId>
+			<version>${project.version}</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/java3d1.7/vecmath.jar</systemPath>
+        </dependency>
+		<!-- https://mvnrepository.com/artifact/org.jogamp.jogl/jogl-all -->
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jogamp.joal</groupId>
+			<artifactId>joal</artifactId>
+			<version>2.3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt-main</artifactId>
+			<version>2.3.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
